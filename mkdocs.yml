@@ -1,10 +1,36 @@
 site_name: ENote
+
 site_url: https://olexsyn.github.io/enote
+
+repo_url:  https://github.com/olexsyn/enote
+repo_name: olexsyn/enote
+edit_uri:  edit/master/docs/                  # шлях у репозиторії до директорії docs/
+
 theme:
   name: material
+  features:
+    - navigation.tabs           # вмикає горизонтальні вкладки
+    - navigation.tabs.sticky    # необов'язково, робить їх "липкими"
+    - content.action.view       # увімкнути "View source"
+    - content.action.edit       # увімкнути "Edit this page"
+
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
 # extra_css:
 #   - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Linux:
+      - Introduction: linux/index.md
+  - Python:
+      - Introduction: python/index.md
+      - Virtual environment: python/index.md
+  - JavaScript:
+      - Introduction: javascript/index.md
+  - MariaDB:
+      - Introduction: mariadb/index.md
+  - Setup: setup.md
