@@ -1,0 +1,10 @@
+site_name: ENote
+site_url: https://olexsyn.github.io/enote
+theme:
+  name: material
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+# extra_css:
+#   - stylesheets/extra.css
