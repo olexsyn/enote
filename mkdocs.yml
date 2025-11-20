@@ -6,17 +6,27 @@ repo_url:  https://github.com/olexsyn/enote
 repo_name: olexsyn/enote
 edit_uri:  edit/master/docs/                  # шлях у репозиторії до директорії docs/
 
+plugins:
+  - search
+  - tags
+
 theme:
   name: material
+  language: uk
   features:
     - navigation.tabs           # вмикає горизонтальні вкладки
     - navigation.tabs.sticky    # необов'язково, робить їх "липкими"
+    - header.autohide
     - content.action.view       # увімкнути "View source"
     - content.action.edit       # увімкнути "Edit this page"
+    - content.code.copy         # копіювати код
+    - search.highlight
+    - search.suggest
 
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - pymdownx.highlight
   - pymdownx.superfences
 
 # extra_css:
@@ -24,13 +34,26 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Linux:
-      - Introduction: linux/index.md
-  - Python:
-      - Introduction: python/index.md
-      - Virtual environment: python/index.md
+  - Linux:                      # якщо активне гор.меню і пункт не має index.md - відкриється наступна за цим сторінка
+    - Commands:
+      - history:     linux/commands/history.md
+      - htpasswd:    linux/commands/htpasswd.md
+    - Ubuntu Server:
+      - Setup: linux/ubuntu-server/setup.md
+      - Usage:
+        - Basics: linux/ubuntu-server/usage/basics.md
+        - Advanced:
+          - Tips: linux/ubuntu-server/usage/advanced/tips.md
+          - Examples: linux/ubuntu-server/usage/advanced/examples.md
+
+  - Python: python/index.md
+
   - JavaScript:
-      - Introduction: javascript/index.md
+    - javascript/index.md
+
   - MariaDB:
-      - Introduction: mariadb/index.md
+    - mariadb/index.md
+
   - Setup: setup.md
+
+  - Tags: tags.md
