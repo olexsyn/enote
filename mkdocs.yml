@@ -13,9 +13,15 @@ plugins:
 theme:
   name: material
   language: uk
+  favicon: assets/images/favicon.png
+  logo: assets/images/enote_logo.png
   features:
+    - navigation.indexes        # ! видаляє дублікат і робить пункт посиланням в сайдбарі, коли в nav посилання стоїть на другому рядку https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages
+    - navigation.sections
     - navigation.tabs           # вмикає горизонтальні вкладки
-    - navigation.tabs.sticky    # необов'язково, робить їх "липкими"
+    - navigation.top
+    - navigation.tabs.sticky    # необов'язково, робить їх "липкими" що це?
+    - navigation.path
     - header.autohide
     - content.action.view       # увімкнути "View source"
     - content.action.edit       # увімкнути "Edit this page"
@@ -45,15 +51,12 @@ nav:
         - Advanced:
           - Tips: linux/ubuntu-server/usage/advanced/tips.md
           - Examples: linux/ubuntu-server/usage/advanced/examples.md
-
-  - Python: python/index.md
-
+  - Python:
+    - python/index.md
+    - Virtual environment: python/venv/index.md
   - JavaScript:
     - javascript/index.md
-
   - MariaDB:
     - mariadb/index.md
-
   - Setup: setup.md
-
   - Tags: tags.md
