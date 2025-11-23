@@ -1,4 +1,4 @@
-# Setup
+# Help
 
 !!! note
 

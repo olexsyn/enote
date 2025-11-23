@@ -7,56 +7,91 @@ repo_name: olexsyn/enote
 edit_uri:  edit/master/docs/                  # шлях у репозиторії до директорії docs/
 
 plugins:
-  - search
-  - tags
+    - search
+    - tags
 
 theme:
-  name: material
-  language: uk
-  favicon: assets/images/favicon.png
-  logo: assets/images/enote_logo.png
-  features:
-    - navigation.indexes        # ! видаляє дублікат і робить пункт посиланням в сайдбарі, коли в nav посилання стоїть на другому рядку https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages
-    - navigation.sections
-    - navigation.tabs           # вмикає горизонтальні вкладки
-    - navigation.top
-    - navigation.tabs.sticky    # необов'язково, робить їх "липкими" що це?
-    - navigation.path
-    - header.autohide
-    - content.action.view       # увімкнути "View source"
-    - content.action.edit       # увімкнути "Edit this page"
-    - content.code.copy         # копіювати код
-    - search.highlight
-    - search.suggest
+    name: material
+    language: uk
+    favicon: assets/images/favicon.png
+    logo: assets/images/enote_logo.png
+    features:
+        - navigation.indexes        # ! видаляє дублікат і робить пункт посиланням в сайдбарі, коли в nav посилання стоїть на другому рядку https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages
+        - navigation.sections
+        - navigation.tabs           # вмикає горизонтальні вкладки
+        - navigation.top
+        - navigation.tabs.sticky    # необов'язково, робить їх "липкими" що це?
+        - navigation.path
+        - header.autohide
+        - content.action.view       # увімкнути "View source"
+        - content.action.edit       # увімкнути "Edit this page"
+        - content.code.copy         # копіювати код
+        - search.highlight
+        - search.suggest
 
 markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.highlight
-  - pymdownx.superfences
+    - admonition
+    - pymdownx.details
+    - pymdownx.highlight
+    - pymdownx.superfences
 
 # extra_css:
 #   - stylesheets/extra.css
 
+# якщо активне гор.меню і пункт не має index.md - відкриється наступна за цим сторінка
+#
+# так краще не робити:
+#            - Virtual environment:
+#                - venv: python/venv/index.md     # назва: index.md
+#                - pip: python/venv/pip.md
+# або так
+#            - Commands:                          # назва:
+#                - linux/commands/index.md        #   index.md
+#                - history: linux/commands/history.md
+#                - htpasswd: linux/commands/htpasswd.md
+# бо менюшка не закривається назад (тількі коли нажати по самій стрілці)
+# робити треба так:
+#            - Virtual environment:
+#                - venv: python/venv/venv.md
+#                - pip: python/venv/pip.md
+#            - Commands:
+#                - history: linux/commands/history.md
+#                - htpasswd: linux/commands/htpasswd.md
+
+
+#       ----v - expand items
 nav:
-  - Home: index.md
-  - Linux:                      # якщо активне гор.меню і пункт не має index.md - відкриється наступна за цим сторінка
-    - Commands:
-      - history:     linux/commands/history.md
-      - htpasswd:    linux/commands/htpasswd.md
-    - Ubuntu Server:
-      - Setup: linux/ubuntu-server/setup.md
-      - Usage:
-        - Basics: linux/ubuntu-server/usage/basics.md
-        - Advanced:
-          - Tips: linux/ubuntu-server/usage/advanced/tips.md
-          - Examples: linux/ubuntu-server/usage/advanced/examples.md
-  - Python:
-    - python/index.md
-    - Virtual environment: python/venv/index.md
-  - JavaScript:
-    - javascript/index.md
-  - MariaDB:
-    - mariadb/index.md
-  - Setup: setup.md
-  - Tags: tags.md
+    - Home: index.md
+    - Linux:
+        - linux/index.md
+        - " ":
+            - Commands:
+                - linux/commands/index.md
+                - history: linux/commands/history.md
+                - htpasswd: linux/commands/htpasswd.md
+        - Ubuntu Server:
+            - Setup: linux/ubuntu-server/setup.md
+    - Python:
+        - python/index.md
+        - " ":
+            - Virtual environment:
+                - venv: python/venv/venv.md
+                - pip: python/venv/pip.md
+            - Modules:
+                - json: python/modules/json.md
+                - cgi: python/modules/cgi.md
+                - borb: python/modules/borb.md
+    - JavaScript:
+        - javascript/index.md
+    - MariaDB:
+        - mariadb/index.md
+    - Git:
+        - git/index.md
+    - Tags:
+        - tags/index.md
+    - Help:
+        - help/index.md
+        - Part:
+            - Expanded:
+                - Tips: linux/ubuntu-server/usage/advanced/tips.md
+                - Examples: linux/ubuntu-server/usage/advanced/examples.md
