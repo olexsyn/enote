@@ -71,6 +71,9 @@ nav:
                 - htpasswd: linux/commands/htpasswd.md
         - Ubuntu Server:
             - Setup: linux/ubuntu-server/setup.md
+        - Ubuntu Home:
+            - Soft:
+                - Sublime Text: linux/ubuntu-home/soft/sublime-text.md
     - Python:
         - python/index.md
         - " ":
@@ -87,6 +90,7 @@ nav:
         - mariadb/index.md
     - Git:
         - git/index.md
+        - Config: git/config.md
     - Tags:
         - tags/index.md
     - Help:
