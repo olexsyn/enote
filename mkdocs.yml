@@ -64,11 +64,10 @@ nav:
     - Home: index.md
     - Linux:
         - linux/index.md
-        - " ":
-            - Commands:
-                - linux/commands/index.md
-                - history: linux/commands/history.md
-                - htpasswd: linux/commands/htpasswd.md
+        - Commands:
+            - linux/commands/index.md
+            - history: linux/commands/history.md
+            - htpasswd: linux/commands/htpasswd.md
         - Ubuntu Server:
             - Setup: linux/ubuntu-server/setup.md
         - Ubuntu Home:
@@ -76,14 +75,13 @@ nav:
                 - Sublime Text: linux/ubuntu-home/soft/sublime-text.md
     - Python:
         - python/index.md
-        - " ":
-            - Virtual environment:
-                - venv: python/venv/venv.md
-                - pip: python/venv/pip.md
-            - Modules:
-                - json: python/modules/json.md
-                - cgi: python/modules/cgi.md
-                - borb: python/modules/borb.md
+        - Virtual environment:
+            - venv: python/venv/venv.md
+            - pip: python/venv/pip.md
+        - Modules:
+            - json: python/modules/json.md
+            - cgi: python/modules/cgi.md
+            - borb: python/modules/borb.md
     - JavaScript:
         - javascript/index.md
     - MariaDB:
@@ -91,6 +89,10 @@ nav:
     - Git:
         - git/index.md
         - Config: git/config.md
+    - Hard:
+        - Laptops:
+            - HP ZBook 15 G6: hard/laptops/hp-zbook-15-g6.md
+            - Lenovo TP T590: hard/laptops/lenovo-tp-t590.md
     - Tags:
         - tags/index.md
     - Help:
