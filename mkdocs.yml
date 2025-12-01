@@ -74,6 +74,7 @@ nav:
         - Ubuntu Home:
             - Soft:
                 - Sublime Text: linux/ubuntu-home/soft/sublime-text.md
+                - XnView MP: linux/ubuntu-home/soft/xnview.md
     - Python:
         - python/index.md
         - " ":
