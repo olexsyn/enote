@@ -73,7 +73,8 @@ nav:
         - Linux Lite:
             - Settings:
                 - Keyboard layout:  linux/linux-lite/settings/keyboard_layout.md
-                - Install fonts: linux/linux-lite/settings/install_fonts.md
+                - Затримка завантаження: linux/linux-lite/settings/wait_for_network.md
+                - Встановлення шрифтів: linux/linux-lite/settings/install_fonts.md
             - Soft:
                 - Sublime Text: linux/linux-lite/soft/sublime_text.md
                 - XnView MP: linux/linux-lite/soft/xnview.md
