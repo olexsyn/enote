@@ -24,6 +24,129 @@ sudo apt upgrade --fix-missing
 
 ## Config
 
+### Current Settings
+
+```json
+{
+    "ignored_packages": ["Vintage",],
+    // The font size set when using "Reset Size"
+    "default_font_size": 10,
+    "bold_folder_labels": true,
+    "default_line_ending": "unix",
+    "detect_indentation": true,
+    // "font_face": "Droid Sans Mono Regular",
+    "font_face": "JetBrains Mono",
+    "font_size": 12,
+    "theme": "Default Dark.sublime-theme",
+    "color_scheme": "Mariana.sublime-color-scheme",
+    "trim_trailing_white_space_on_save": "all",
+    "caret_extra_top": 3,
+    "caret_extra_bottom": 3,
+    "caret_extra_width": 2,
+    "word_wrap": false,
+    "drag_text": false,
+
+    // Controls when white space is drawn. Any of the following options may be combined:
+    //  - "selection": Draw white space under the current selection.
+    //  - "leading": Draw any white space between the beginning of a line and the first character.
+    //  - "enclosed": Draw white space enclosed by other characters.
+    //  - "trailing": Draw white space following the last character on a line.
+    //  - "isolated": Draw white space on lines containing no other characters.
+    //  - "all": All of the above, ie. always draw white space.
+    //
+    // These options may be further refined by appending any of the following separated by an underscore:
+    //  - "none": Don't draw this kind of white space.
+    //  - "tabs": Only draw tabs here.
+    //  - "spaces": Only draw spaces here.
+    //  - "mixed": Only draw white space that does not match the indentation style. For example if "translate_tabs_to_spaces" is true only draw tabs.
+    //  - "mixed_tabs": Like "mixed" but only draw tabs.
+    //  - "mixed_spaces": Like "mixed" but only draw spaces.
+    //  - "all": Draw both tabs and spaces. This is the default.
+    //
+    // Note that options are applied in sequence. So a later option may override an earlier one.
+    //
+    // Examples:
+    //  - ["selection", "trailing", "isolated"]:
+    //      Draw white space at the end of any lines and under the selection.
+    //
+    //  - ["all_tabs", "selection"]:
+    //      Draw tabs anywhere and any white space under the selection.
+    //
+    //  - ["all_mixed"]:
+    //      Draw any white space that does not match the indentation style.
+    //
+    //  - ["leading_mixed", "isolated_mixed"]:
+    //      Draw any indentation that does not match the indentation style.
+    //
+    //  - ["selection_mixed_tabs"]:
+    //      Draw only tabs under the selection and only if the indentation style is spaces.
+    //
+    //  - ["all_tabs", "selection"]:
+    //      Draw all tabs and any white space under the selection.
+    //
+    //  - ["all", "selection_none"]:
+    //      Inverse of the default. Draw white space everywhere except under the selection.
+    "draw_white_space": ["all_mixed"],
+
+    // Controls where trailing white space is removed on save.
+    // - "none": Do not remove any trailing white space on save.
+    // - "all": Remove all trailing white space on save.
+    // - "not_on_caret": Only remove white space that won't affect the caret. When used in conjunction with "save_on_focus_lost" and certain desktop environments that frequently make the application lose focus this avoids the caret jumping around a lot.
+    "trim_trailing_white_space_on_save": "all",
+    // Set to true to ensure the last line of the file ends in a newline character when saving
+    "ensure_newline_at_eof_on_save": true,
+}
+
+```
+
+### Current Key Bindings
+
+<table><thead><tr><th width="223">keys</th><th>desc</th></tr></thead><tbody><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="1f525">🔥</span> ''Ctrl+L''</td><td>курсор вниз с выделением всей верхней строки (удобно начинать выделение)</td></tr><tr><td>''Shift+Down''</td><td>курсор вниз с выделением части (от курсора до конца) верхней строки</td></tr><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="1f525">🔥</span> ''Ctrl+Shift+L''</td><td>разделить выделение на строки</td></tr><tr><td>''Ctrl+Left''</td><td>курсор на слово влево, Alt+Left - аналог</td></tr><tr><td>''Ctrl+Right''</td><td>курсор на слово вправо, Alt+Right - аналог</td></tr><tr><td>:chk: ''Ctrl+Shift+Left''</td><td>курсор на слово влево с выделением, Alt+Shift+Left - аналог</td></tr><tr><td>:chk: ''Ctrl+Shift+Right''</td><td>курсор на слово вправо с выделением, Alt+Shift+Right - аналог</td></tr><tr><td>''Ctrl+M''</td><td>курсор в начало или в конец скобок</td></tr><tr><td>''Ctrl+Up'', ''Ctrl+Down''</td><td>прокрутить строки вверх/вниз (без изменения позиции курсора до края видимой области)</td></tr><tr><td>''Ctrl+Home'', ''Ctrl+End''</td><td>курсор в начало/конец файла</td></tr><tr><td>''Ctrl+Shift+Home'', ''Ctrl+Shift+End''</td><td>курсор в начало/конец файла с выделением от позиции курсора</td></tr><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="1f525">🔥</span> ''Ctrl+Enter''</td><td>даже если курсор находится посередине строки добавляется пустая строка и курсор переводится в начальную позицию</td></tr><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="1f525">🔥</span> ''Ctrl+Shift+Enter''</td><td>аналогично предыдущему, только строка добавляется над курсором</td></tr><tr><td>''Ctrl+K'', ''Ctrl+B''</td><td>убрать/показать боковую панель</td></tr><tr><td>:chk: ''Ctrl+K'', ''Ctrl+U''</td><td>upper_case</td></tr><tr><td>:chk: ''Ctrl+K'', ''Ctrl+L''</td><td>lower_case</td></tr><tr><td>''Ctrl+K'', ''Ctrl+Space''</td><td>command: set_mark</td></tr><tr><td>''Ctrl+K'', ''Ctrl+A''</td><td>select_to_mark</td></tr><tr><td>''Ctrl+K'', ''Ctrl+W''</td><td>delete_to_mark</td></tr><tr><td>''Ctrl+K'', ''Ctrl+X''</td><td>swap_with_mark</td></tr><tr><td>''Ctrl+K'', ''Ctrl+Y''</td><td>yank :?:</td></tr><tr><td>''Ctrl+K'', ''Ctrl+G''</td><td>clear_bookmarks, args: {name: mark}</td></tr><tr><td>''Ctrl+K'', ''Ctrl+K''</td><td>удалить текст от курсора до конца строки EOL (кажется, проще ''Shift+End'' и ''Del'')</td></tr><tr><td>''Ctrl+K'', ''Ctrl+BackSpace''</td><td>удалить текст от курсора до начала строки BOL (кажется, проще ''Shift+Home'' и ''Del'')</td></tr><tr><td>''Ctrl+K'', ''Ctrl+C''</td><td>установить строку с курсором по центру экрана</td></tr></tbody></table>
+
+```
+  { keys: [F2], command: next_bookmark },
+  { keys: [Shift+F2], command: prev_bookmark },
+  { keys: [Ctrl+F2], command: toggle_bookmark },
+  { keys: [Ctrl+Shift+F2], command: clear_bookmarks },
+  { keys: [Alt+F2], command: select_all_bookmarks },
+```
+
+```json
+[
+    { "keys": ["f8"], "command": "toggle_setting", "args": {"setting": "word_wrap"}},
+
+    { "keys": ["ctrl+d"], "command": "duplicate_line" },
+    { "keys": ["ctrl+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+
+    { "keys": ["shift+f9"], "command": "sort_lines", "args": {"remove_duplicates": true} },
+    { "keys": ["ctrl+alt+shift+f9"], "command": "sort_lines", "args": {"reverse": true} },
+
+    { "keys": ["ctrl+2"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+    { "keys": ["ctrl+;"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+    { "keys": ["ctrl+3"], "command": "show_overlay", "args": {"overlay": "goto", "text": "#"} },
+
+    { "keys": ["ctrl+alt+w"], "command": "swap_case" },
+
+    { "keys": ["ctrl+r"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+    { "keys": ["ctrl+alt+a"], "command": "trim_leading_whitespace" },
+
+    { "keys": ["ctrl+alt+w"], "command": "next_bookmark" },
+    { "keys": ["ctrl+alt+u"], "command": "prev_bookmark" },
+    { "keys": ["ctrl+alt+o"], "command": "set_mark" },
+
+    { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
+    { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
+
+    { "keys": ["ctrl+b"], "command": "toggle_bookmark" },
+
+]
+
+```
+
+---
+
+## Translate
+
 ```json
 {
     "bold_folder_labels": true,
@@ -351,48 +474,3 @@ sudo apt upgrade --fix-missing
 }
 
 ```
-
-## Key Bindings
-
-<table><thead><tr><th width="223">keys</th><th>desc</th></tr></thead><tbody><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="1f525">🔥</span> ''Ctrl+L''</td><td>курсор вниз с выделением всей верхней строки (удобно начинать выделение)</td></tr><tr><td>''Shift+Down''</td><td>курсор вниз с выделением части (от курсора до конца) верхней строки</td></tr><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="1f525">🔥</span> ''Ctrl+Shift+L''</td><td>разделить выделение на строки</td></tr><tr><td>''Ctrl+Left''</td><td>курсор на слово влево, Alt+Left - аналог</td></tr><tr><td>''Ctrl+Right''</td><td>курсор на слово вправо, Alt+Right - аналог</td></tr><tr><td>:chk: ''Ctrl+Shift+Left''</td><td>курсор на слово влево с выделением, Alt+Shift+Left - аналог</td></tr><tr><td>:chk: ''Ctrl+Shift+Right''</td><td>курсор на слово вправо с выделением, Alt+Shift+Right - аналог</td></tr><tr><td>''Ctrl+M''</td><td>курсор в начало или в конец скобок</td></tr><tr><td>''Ctrl+Up'', ''Ctrl+Down''</td><td>прокрутить строки вверх/вниз (без изменения позиции курсора до края видимой области)</td></tr><tr><td>''Ctrl+Home'', ''Ctrl+End''</td><td>курсор в начало/конец файла</td></tr><tr><td>''Ctrl+Shift+Home'', ''Ctrl+Shift+End''</td><td>курсор в начало/конец файла с выделением от позиции курсора</td></tr><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="1f525">🔥</span> ''Ctrl+Enter''</td><td>даже если курсор находится посередине строки добавляется пустая строка и курсор переводится в начальную позицию</td></tr><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="1f525">🔥</span> ''Ctrl+Shift+Enter''</td><td>аналогично предыдущему, только строка добавляется над курсором</td></tr><tr><td>''Ctrl+K'', ''Ctrl+B''</td><td>убрать/показать боковую панель</td></tr><tr><td>:chk: ''Ctrl+K'', ''Ctrl+U''</td><td>upper_case</td></tr><tr><td>:chk: ''Ctrl+K'', ''Ctrl+L''</td><td>lower_case</td></tr><tr><td>''Ctrl+K'', ''Ctrl+Space''</td><td>command: set_mark</td></tr><tr><td>''Ctrl+K'', ''Ctrl+A''</td><td>select_to_mark</td></tr><tr><td>''Ctrl+K'', ''Ctrl+W''</td><td>delete_to_mark</td></tr><tr><td>''Ctrl+K'', ''Ctrl+X''</td><td>swap_with_mark</td></tr><tr><td>''Ctrl+K'', ''Ctrl+Y''</td><td>yank :?:</td></tr><tr><td>''Ctrl+K'', ''Ctrl+G''</td><td>clear_bookmarks, args: {name: mark}</td></tr><tr><td>''Ctrl+K'', ''Ctrl+K''</td><td>удалить текст от курсора до конца строки EOL (кажется, проще ''Shift+End'' и ''Del'')</td></tr><tr><td>''Ctrl+K'', ''Ctrl+BackSpace''</td><td>удалить текст от курсора до начала строки BOL (кажется, проще ''Shift+Home'' и ''Del'')</td></tr><tr><td>''Ctrl+K'', ''Ctrl+C''</td><td>установить строку с курсором по центру экрана</td></tr></tbody></table>
-
-```
-  { keys: [F2], command: next_bookmark },
-  { keys: [Shift+F2], command: prev_bookmark },
-  { keys: [Ctrl+F2], command: toggle_bookmark },
-  { keys: [Ctrl+Shift+F2], command: clear_bookmarks },
-  { keys: [Alt+F2], command: select_all_bookmarks },
-```
-
-```json
-[
-	{ "keys": ["f8"], "command": "toggle_setting", "args": {"setting": "word_wrap"}},
-
-	{ "keys": ["ctrl+d"], "command": "duplicate_line" },
-	{ "keys": ["ctrl+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
-
-	{ "keys": ["shift+f9"], "command": "sort_lines", "args": {"remove_duplicates": true} },
-	{ "keys": ["ctrl+alt+shift+f9"], "command": "sort_lines", "args": {"reverse": true} },
-
-	{ "keys": ["ctrl+2"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
-	{ "keys": ["ctrl+;"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
-	{ "keys": ["ctrl+3"], "command": "show_overlay", "args": {"overlay": "goto", "text": "#"} },
-
-	{ "keys": ["ctrl+alt+w"], "command": "swap_case" },
-
-	{ "keys": ["ctrl+r"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
-	{ "keys": ["ctrl+alt+a"], "command": "trim_leading_whitespace" },
-
-	{ "keys": ["ctrl+alt+w"], "command": "next_bookmark" },
-	{ "keys": ["ctrl+alt+u"], "command": "prev_bookmark" },
-	{ "keys": ["ctrl+alt+o"], "command": "set_mark" },
-
-	{ "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
-	{ "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
-
-	{ "keys": ["ctrl+b"], "command": "toggle_bookmark" },
-
-]
-
-```
-

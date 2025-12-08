@@ -71,6 +71,8 @@ nav:
         - Ubuntu Server:
             - Setup: linux/ubuntu-server/setup.md
         - Ubuntu Home:
+            - Settings:
+                - Keyboard layout: linux/ubuntu-home/settings/keyboard_layout.md
             - Soft:
                 - Sublime Text: linux/ubuntu-home/soft/sublime-text.md
                 - XnView MP: linux/ubuntu-home/soft/xnview.md
