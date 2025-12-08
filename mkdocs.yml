@@ -70,12 +70,13 @@ nav:
             - htpasswd: linux/commands/htpasswd.md
         - Ubuntu Server:
             - Setup: linux/ubuntu-server/setup.md
-        - Ubuntu Home:
+        - Linux Lite:
             - Settings:
-                - Keyboard layout: linux/ubuntu-home/settings/keyboard_layout.md
+                - Keyboard layout:  linux/linux-lite/settings/keyboard_layout.md
+                - Install fonts: linux/linux-lite/settings/install_fonts.md
             - Soft:
-                - Sublime Text: linux/ubuntu-home/soft/sublime-text.md
-                - XnView MP: linux/ubuntu-home/soft/xnview.md
+                - Sublime Text: linux/linux-lite/soft/sublime_text.md
+                - XnView MP: linux/linux-lite/soft/xnview.md
     - Python:
         - python/index.md
         - Virtual environment:
