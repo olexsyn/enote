@@ -72,12 +72,19 @@ nav:
             - Setup: linux/ubuntu-server/setup.md
         - Linux Lite:
             - Settings:
+                - Linux Lite Install: linux/linux-lite/hp-zbook/lite_install.md
                 - Keyboard layout:  linux/linux-lite/settings/keyboard_layout.md
                 - Затримка завантаження: linux/linux-lite/settings/wait_for_network.md
                 - Встановлення шрифтів: linux/linux-lite/settings/install_fonts.md
+                - System Load Monitor: linux/linux-lite/settings/plugin_system_load_monitor.md
+
             - Soft:
                 - Sublime Text: linux/linux-lite/soft/sublime_text.md
                 - XnView MP: linux/linux-lite/soft/xnview.md
+            - HP ZBook:
+                - Завантажитись з USB: linux/linux-lite/hp-zbook/usb_boot.md
+                - Планшетна прокрутка: linux/linux-lite/hp-zbook/natural_scrolling.md
+                - NVidia Drivers: linux/linux-lite/hp-zbook/nvidia_install.md
     - Python:
         - python/index.md
         - Virtual environment:
