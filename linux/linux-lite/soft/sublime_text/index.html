@@ -1,0 +1,3277 @@
+
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://olexsyn.github.io/enote/linux/linux-lite/soft/sublime_text/">
+      
+      
+        <link rel="prev" href="../../settings/plugin_system_load_monitor/">
+      
+      
+        <link rel="next" href="../xnview/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Sublime Text - ENote</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sublime-text" class="md-skip">
+          Перейти до змісту
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Хедер">
+    <a href="../../../.." title="ENote" class="md-header__button md-logo" aria-label="ENote" data-md-component="logo">
+      
+  <img src="../../../../assets/images/enote_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ENote
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sublime Text
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Пошук" placeholder="Пошук" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Шукати">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистити" aria-label="Очистити" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Пошук розпочато
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/olexsyn/enote" title="Перейти до вихідного коду" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    olexsyn/enote
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Linux
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../python/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../javascript/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  JavaScript
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../mariadb/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  MariaDB
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../git/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Git
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../hard/laptops/hp-zbook-15-g6/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Hard
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tags
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../help/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Help
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навігація" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="ENote" class="md-nav__button md-logo" aria-label="ENote" data-md-component="logo">
+      
+  <img src="../../../../assets/images/enote_logo.png" alt="logo">
+
+    </a>
+    ENote
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/olexsyn/enote" title="Перейти до вихідного коду" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    olexsyn/enote
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Linux
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../commands/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Commands
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../commands/history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    history
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../commands/htpasswd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    htpasswd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ubuntu Server
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ubuntu Server
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ubuntu-server/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Lite
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Linux Lite
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Settings
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hp-zbook/lite_install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Lite Install
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../settings/keyboard_layout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard layout
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../settings/wait_for_network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Затримка завантаження
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../settings/install_fonts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Встановлення шрифтів
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../settings/plugin_system_load_monitor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Load Monitor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Soft
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Soft
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sublime Text
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sublime Text
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Зміст">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Зміст
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Не оновлюватися
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Config
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Config">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#current-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-key-bindings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Key Bindings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#translate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Translate
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xnview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    XnView MP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HP ZBook
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    HP ZBook
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hp-zbook/usb_boot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Завантажитись з USB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hp-zbook/natural_scrolling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Планшетна прокрутка
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hp-zbook/nvidia_install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NVidia Drivers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../python/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Virtual environment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Virtual environment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/venv/venv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    venv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/venv/pip/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pip
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modules
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/modules/json/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    json
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/modules/cgi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    cgi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../python/modules/borb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    borb
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../javascript/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JavaScript
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    JavaScript
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../mariadb/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MariaDB
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    MariaDB
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../git/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Git
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../git/config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hard
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hard
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Laptops
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Laptops
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hard/laptops/hp-zbook-15-g6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HP ZBook 15 G6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hard/laptops/lenovo-tp-t590/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lenovo TP T590
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../tags/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tags
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tags
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../help/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Help
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Help
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2_1" id="__nav_9_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Expanded
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Expanded
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ubuntu-server/usage/advanced/tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ubuntu-server/usage/advanced/examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Зміст">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Зміст
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Не оновлюватися
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Config
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Config">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#current-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-key-bindings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Key Bindings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#translate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Translate
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Навігація" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Linux
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../hp-zbook/lite_install/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Linux Lite
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Soft
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/olexsyn/enote/edit/master/docs/linux/linux-lite/soft/sublime_text.md" title="Редагувати сторінку" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/olexsyn/enote/raw/master/docs/linux/linux-lite/soft/sublime_text.md" title="Переглянути вихідний код сторінки" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="sublime-text">Sublime Text</h1>
+<p>Download: https://www.sublimetext.com/docs/linux_repositories.html#apt</p>
+<h2 id="_1">Не оновлюватися</h2>
+<p>Sublime перевіряє оновлення і може сам оновитися, якщо проґавити вікно з повідомленням про це. Наприклад, залишити комп на деякий час без нагляду.</p>
+<p>Щоб цього не сталося, треба прописати в <strong><em>hosts</em></strong> таке:</p>
+<div class="highlight"><pre><span></span><code>127.0.0.1   www.sublimetext.com
+127.0.0.1   download.sublimetext.com
+</code></pre></div>
+<p>Але виникнуть проблеми при оновленні <code>sudo apt upgrade</code>. Щоб оновлення не переривалося з помилкою, треба запускати так:</p>
+<div class="highlight"><pre><span></span><code>sudo apt update
+sudo apt upgrade --fix-missing
+</code></pre></div>
+<h2 id="config">Config</h2>
+<h3 id="current-settings">Current Settings</h3>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;ignored_packages&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Vintage&quot;</span><span class="p">,],</span>
+<span class="w">    </span><span class="c1">// The font size set when using &quot;Reset Size&quot;</span>
+<span class="w">    </span><span class="nt">&quot;default_font_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;bold_folder_labels&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;default_line_ending&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;unix&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;detect_indentation&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="c1">// &quot;font_face&quot;: &quot;Droid Sans Mono Regular&quot;,</span>
+<span class="w">    </span><span class="nt">&quot;font_face&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;JetBrains Mono&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;font_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;theme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Default Dark.sublime-theme&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;color_scheme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mariana.sublime-color-scheme&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;trim_trailing_white_space_on_save&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;all&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;caret_extra_top&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;caret_extra_bottom&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;caret_extra_width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;word_wrap&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;drag_text&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Controls when white space is drawn. Any of the following options may be combined:</span>
+<span class="w">    </span><span class="c1">//  - &quot;selection&quot;: Draw white space under the current selection.</span>
+<span class="w">    </span><span class="c1">//  - &quot;leading&quot;: Draw any white space between the beginning of a line and the first character.</span>
+<span class="w">    </span><span class="c1">//  - &quot;enclosed&quot;: Draw white space enclosed by other characters.</span>
+<span class="w">    </span><span class="c1">//  - &quot;trailing&quot;: Draw white space following the last character on a line.</span>
+<span class="w">    </span><span class="c1">//  - &quot;isolated&quot;: Draw white space on lines containing no other characters.</span>
+<span class="w">    </span><span class="c1">//  - &quot;all&quot;: All of the above, ie. always draw white space.</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">// These options may be further refined by appending any of the following separated by an underscore:</span>
+<span class="w">    </span><span class="c1">//  - &quot;none&quot;: Don&#39;t draw this kind of white space.</span>
+<span class="w">    </span><span class="c1">//  - &quot;tabs&quot;: Only draw tabs here.</span>
+<span class="w">    </span><span class="c1">//  - &quot;spaces&quot;: Only draw spaces here.</span>
+<span class="w">    </span><span class="c1">//  - &quot;mixed&quot;: Only draw white space that does not match the indentation style. For example if &quot;translate_tabs_to_spaces&quot; is true only draw tabs.</span>
+<span class="w">    </span><span class="c1">//  - &quot;mixed_tabs&quot;: Like &quot;mixed&quot; but only draw tabs.</span>
+<span class="w">    </span><span class="c1">//  - &quot;mixed_spaces&quot;: Like &quot;mixed&quot; but only draw spaces.</span>
+<span class="w">    </span><span class="c1">//  - &quot;all&quot;: Draw both tabs and spaces. This is the default.</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">// Note that options are applied in sequence. So a later option may override an earlier one.</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">// Examples:</span>
+<span class="w">    </span><span class="c1">//  - [&quot;selection&quot;, &quot;trailing&quot;, &quot;isolated&quot;]:</span>
+<span class="w">    </span><span class="c1">//      Draw white space at the end of any lines and under the selection.</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">//  - [&quot;all_tabs&quot;, &quot;selection&quot;]:</span>
+<span class="w">    </span><span class="c1">//      Draw tabs anywhere and any white space under the selection.</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">//  - [&quot;all_mixed&quot;]:</span>
+<span class="w">    </span><span class="c1">//      Draw any white space that does not match the indentation style.</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">//  - [&quot;leading_mixed&quot;, &quot;isolated_mixed&quot;]:</span>
+<span class="w">    </span><span class="c1">//      Draw any indentation that does not match the indentation style.</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">//  - [&quot;selection_mixed_tabs&quot;]:</span>
+<span class="w">    </span><span class="c1">//      Draw only tabs under the selection and only if the indentation style is spaces.</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">//  - [&quot;all_tabs&quot;, &quot;selection&quot;]:</span>
+<span class="w">    </span><span class="c1">//      Draw all tabs and any white space under the selection.</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">//  - [&quot;all&quot;, &quot;selection_none&quot;]:</span>
+<span class="w">    </span><span class="c1">//      Inverse of the default. Draw white space everywhere except under the selection.</span>
+<span class="w">    </span><span class="nt">&quot;draw_white_space&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;all_mixed&quot;</span><span class="p">],</span>
+
+<span class="w">    </span><span class="c1">// Controls where trailing white space is removed on save.</span>
+<span class="w">    </span><span class="c1">// - &quot;none&quot;: Do not remove any trailing white space on save.</span>
+<span class="w">    </span><span class="c1">// - &quot;all&quot;: Remove all trailing white space on save.</span>
+<span class="w">    </span><span class="c1">// - &quot;not_on_caret&quot;: Only remove white space that won&#39;t affect the caret. When used in conjunction with &quot;save_on_focus_lost&quot; and certain desktop environments that frequently make the application lose focus this avoids the caret jumping around a lot.</span>
+<span class="w">    </span><span class="nt">&quot;trim_trailing_white_space_on_save&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;all&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="c1">// Set to true to ensure the last line of the file ends in a newline character when saving</span>
+<span class="w">    </span><span class="nt">&quot;ensure_newline_at_eof_on_save&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="current-key-bindings">Current Key Bindings</h3>
+<table><thead><tr><th width="223">keys</th><th>desc</th></tr></thead><tbody><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="1f525">🔥</span> ''Ctrl+L''</td><td>курсор вниз с выделением всей верхней строки (удобно начинать выделение)</td></tr><tr><td>''Shift+Down''</td><td>курсор вниз с выделением части (от курсора до конца) верхней строки</td></tr><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="1f525">🔥</span> ''Ctrl+Shift+L''</td><td>разделить выделение на строки</td></tr><tr><td>''Ctrl+Left''</td><td>курсор на слово влево, Alt+Left - аналог</td></tr><tr><td>''Ctrl+Right''</td><td>курсор на слово вправо, Alt+Right - аналог</td></tr><tr><td>:chk: ''Ctrl+Shift+Left''</td><td>курсор на слово влево с выделением, Alt+Shift+Left - аналог</td></tr><tr><td>:chk: ''Ctrl+Shift+Right''</td><td>курсор на слово вправо с выделением, Alt+Shift+Right - аналог</td></tr><tr><td>''Ctrl+M''</td><td>курсор в начало или в конец скобок</td></tr><tr><td>''Ctrl+Up'', ''Ctrl+Down''</td><td>прокрутить строки вверх/вниз (без изменения позиции курсора до края видимой области)</td></tr><tr><td>''Ctrl+Home'', ''Ctrl+End''</td><td>курсор в начало/конец файла</td></tr><tr><td>''Ctrl+Shift+Home'', ''Ctrl+Shift+End''</td><td>курсор в начало/конец файла с выделением от позиции курсора</td></tr><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="1f525">🔥</span> ''Ctrl+Enter''</td><td>даже если курсор находится посередине строки добавляется пустая строка и курсор переводится в начальную позицию</td></tr><tr><td><span data-gb-custom-inline data-tag="emoji" data-code="1f525">🔥</span> ''Ctrl+Shift+Enter''</td><td>аналогично предыдущему, только строка добавляется над курсором</td></tr><tr><td>''Ctrl+K'', ''Ctrl+B''</td><td>убрать/показать боковую панель</td></tr><tr><td>:chk: ''Ctrl+K'', ''Ctrl+U''</td><td>upper_case</td></tr><tr><td>:chk: ''Ctrl+K'', ''Ctrl+L''</td><td>lower_case</td></tr><tr><td>''Ctrl+K'', ''Ctrl+Space''</td><td>command: set_mark</td></tr><tr><td>''Ctrl+K'', ''Ctrl+A''</td><td>select_to_mark</td></tr><tr><td>''Ctrl+K'', ''Ctrl+W''</td><td>delete_to_mark</td></tr><tr><td>''Ctrl+K'', ''Ctrl+X''</td><td>swap_with_mark</td></tr><tr><td>''Ctrl+K'', ''Ctrl+Y''</td><td>yank :?:</td></tr><tr><td>''Ctrl+K'', ''Ctrl+G''</td><td>clear_bookmarks, args: {name: mark}</td></tr><tr><td>''Ctrl+K'', ''Ctrl+K''</td><td>удалить текст от курсора до конца строки EOL (кажется, проще ''Shift+End'' и ''Del'')</td></tr><tr><td>''Ctrl+K'', ''Ctrl+BackSpace''</td><td>удалить текст от курсора до начала строки BOL (кажется, проще ''Shift+Home'' и ''Del'')</td></tr><tr><td>''Ctrl+K'', ''Ctrl+C''</td><td>установить строку с курсором по центру экрана</td></tr></tbody></table>
+
+<div class="highlight"><pre><span></span><code>  { keys: [F2], command: next_bookmark },
+  { keys: [Shift+F2], command: prev_bookmark },
+  { keys: [Ctrl+F2], command: toggle_bookmark },
+  { keys: [Ctrl+Shift+F2], command: clear_bookmarks },
+  { keys: [Alt+F2], command: select_all_bookmarks },
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;f8&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;toggle_setting&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;setting&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;word_wrap&quot;</span><span class="p">}},</span>
+
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ctrl+d&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;duplicate_line&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ctrl+shift+d&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;run_macro_file&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;file&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;res://Packages/Default/Delete Line.sublime-macro&quot;</span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;shift+f9&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort_lines&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;remove_duplicates&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ctrl+alt+shift+f9&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sort_lines&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;reverse&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ctrl+2&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;show_overlay&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;overlay&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;goto&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@&quot;</span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ctrl+;&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;show_overlay&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;overlay&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;goto&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;:&quot;</span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ctrl+3&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;show_overlay&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;overlay&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;goto&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#&quot;</span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ctrl+alt+w&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;swap_case&quot;</span><span class="w"> </span><span class="p">},</span>
+
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ctrl+r&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;show_panel&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;panel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;replace&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;reverse&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ctrl+alt+a&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;trim_leading_whitespace&quot;</span><span class="w"> </span><span class="p">},</span>
+
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ctrl+alt+w&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next_bookmark&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ctrl+alt+u&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;prev_bookmark&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ctrl+alt+o&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;set_mark&quot;</span><span class="w"> </span><span class="p">},</span>
+
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;alt+shift+up&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;select_lines&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;forward&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;alt+shift+down&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;select_lines&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;forward&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;keys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ctrl+b&quot;</span><span class="p">],</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;toggle_bookmark&quot;</span><span class="w"> </span><span class="p">},</span>
+
+<span class="p">]</span>
+</code></pre></div>
+<hr />
+<h2 id="translate">Translate</h2>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;bold_folder_labels&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;default_line_ending&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;unix&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;detect_indentation&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="c1">// &quot;font_face&quot;: &quot;Droid Sans Mono Regular&quot;,</span>
+<span class="w">    </span><span class="nt">&quot;font_face&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;JetBrains Mono&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;font_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;theme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Default Dark.sublime-theme&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;color_scheme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mariana.sublime-color-scheme&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ignored_packages&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Vintage&quot;</span><span class="p">,],</span>
+<span class="w">    </span><span class="nt">&quot;update_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Стовпці для відображення вертикальних лінійок</span>
+<span class="w">    </span><span class="nt">&quot;rulers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">80</span><span class="p">,],</span>
+
+<span class="w">    </span><span class="c1">// Установіть значення true, щоб вставляти пробіли під час натискання табуляції</span>
+<span class="w">    </span><span class="nt">&quot;translate_tabs_to_spaces&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Вимикає горизонтальне прокручування, якщо ввімкнено.</span>
+<span class="w">    </span><span class="c1">// Може бути встановлено на true, false або &quot;auto&quot;, для яких його буде вимкнено</span>
+<span class="w">    </span><span class="c1">// вихідний код, і в іншому випадку включено.</span>
+<span class="w">    </span><span class="nt">&quot;word_wrap&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Встановіть значення, відмінне від 0, щоб примусово обтікати цей</span>
+<span class="w">    </span><span class="c1">// стовпець, а не ширину вікна. Перегляньте &quot;wrap_width_style&quot; для</span>
+<span class="w">    </span><span class="c1">// додаткових параметрів.</span>
+<span class="w">    </span><span class="nt">&quot;wrap_width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">    </span><span class="nt">&quot;show_definitions&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;sidebar_size_13&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;tabs_small&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;margin&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;move_to_limit_on_up_down&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;predawn_findreplace_small&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;predawn_tabs_small&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Додає пробіли до першої відкритої дужки під час відступу. Потрібно ввімкнути auto_indent.</span>
+<span class="w">    </span><span class="nt">&quot;indent_to_bracket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Якщо ввімкнено, натискання вкладки вставлятиме найкраще відповідне завершення.</span>
+<span class="w">    </span><span class="c1">// Якщо вимкнено, вкладка запускатиме лише фрагменти або вставлятиме табуляцію.</span>
+<span class="w">    </span><span class="c1">// Shift+tab можна використовувати для вставлення явної табуляції, коли ввімкнено tab_completion.</span>
+<span class="w">    </span><span class="nt">&quot;tab_completion&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Controls what scopes auto complete will be triggered in</span>
+<span class="w">    </span><span class="nt">&quot;auto_complete_selector&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="c1">// &quot;auto_complete_selector&quot;: &quot;meta.tag&quot;,</span>
+
+<span class="w">    </span><span class="nt">&quot;draw_white_space&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;all_tabs&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;selection&quot;</span><span class="p">],</span>
+
+<span class="w">    </span><span class="c1">// Керує способом малювання пробілу, що не є ASCII.</span>
+<span class="w">    </span><span class="c1">// - &quot;none&quot;: дослівно намалювати пробіл Юнікод, наприклад. приховування пробілів нульової ширини.</span>
+<span class="w">    </span><span class="c1">// - &quot;punctuation&quot;: намалюйте кодові точки пробілу Unicode, визначеного як пунктуація. Це включає NBSP, але виключає ідеографічний простір CJK.</span>
+<span class="w">    </span><span class="c1">// - &quot;all&quot;: намалювати кодові точки всіх символів пробілу, що не є ASCII.</span>
+<span class="w">    </span><span class="nt">&quot;draw_unicode_white_space&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;all&quot;</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Вирізайте пробіли під час збереження лише для тих частин файлу, які ви змінили. Якщо в інших частинах файлу є пробіли в кінці, вони залишаються окремо.</span>
+<span class="w">    </span><span class="nt">&quot;trim_only_modified_white_space&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Установіть значення true, щоб останній рядок файлу закінчувався символом нового рядка під час збереження</span>
+<span class="w">    </span><span class="nt">&quot;ensure_newline_at_eof_on_save&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Керує видаленням пробілу в кінці під час збереження.</span>
+<span class="w">    </span><span class="c1">// - &quot;none&quot;: не видаляти кінцеві пробіли під час збереження.</span>
+<span class="w">    </span><span class="c1">// - &quot;all&quot;: Видалити всі пробіли в кінці під час збереження.</span>
+<span class="w">    </span><span class="c1">// - &quot;not_on_caret&quot;: видаляйте лише пробіли, які не впливатимуть</span>
+<span class="w">    </span><span class="c1">//                   на каретку.</span>
+<span class="w">    </span><span class="c1">//                   Якщо використовується разом із &quot;save_on_focus_lost&quot; і певними</span>
+<span class="w">    </span><span class="c1">// середовищами робочого столу, через які програма часто втрачає</span>
+<span class="w">    </span><span class="c1">// фокус, це дозволяє уникнути стрибків курсору.</span>
+<span class="w">    </span><span class="nt">&quot;trim_trailing_white_space_on_save&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;all&quot;</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Установіть значення true, щоб автоматично зберігати файли під час переходу до іншого файлу чи програми</span>
+<span class="w">    </span><span class="nt">&quot;save_on_focus_lost&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Обрізає пробіли, додані auto_indent під час переміщення каретки з рядка.</span>
+<span class="w">    </span><span class="nt">&quot;trim_automatic_white_space&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Установіть значення false, щоб вимкнути напрямні відступів.</span>
+<span class="w">    </span><span class="c1">// Колір і ширину напрямних відступів можна налаштувати шляхом редагування</span>
+<span class="w">    </span><span class="c1">// відповідний файл .tmTheme і вказуючи кольори &quot;guide&quot;,</span>
+<span class="w">    </span><span class="c1">// &quot;activeGuide&quot; і &quot;stackGuide&quot;</span>
+<span class="w">    </span><span class="nt">&quot;draw_indent_guides&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="cm">/*&quot;trim_trailing_white_space_on_save&quot;: &quot;none&quot;,*/</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;bold_folder_labels&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;default_line_ending&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;unix&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;detect_indentation&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="c1">// &quot;font_face&quot;: &quot;Droid Sans Mono Regular&quot;,</span>
+<span class="w">    </span><span class="nt">&quot;font_face&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;JetBrains Mono&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;font_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;theme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Default Dark.sublime-theme&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;color_scheme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mariana.sublime-color-scheme&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ignored_packages&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Vintage&quot;</span><span class="p">,],</span>
+
+<span class="w">    </span><span class="c1">// Стовпці для відображення вертикальних лінійок</span>
+<span class="w">    </span><span class="nt">&quot;rulers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">80</span><span class="p">,],</span>
+
+<span class="w">    </span><span class="c1">// Установіть значення true, щоб вставляти пробіли під час натискання табуляції</span>
+<span class="w">    </span><span class="nt">&quot;translate_tabs_to_spaces&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Вимикає горизонтальне прокручування, якщо ввімкнено.</span>
+<span class="w">    </span><span class="c1">// Може бути встановлено на true, false або &quot;auto&quot;, для яких його буде вимкнено</span>
+<span class="w">    </span><span class="c1">// вихідний код, і в іншому випадку включено.</span>
+<span class="w">    </span><span class="nt">&quot;word_wrap&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Встановіть значення, відмінне від 0, щоб примусово обтікати цей</span>
+<span class="w">    </span><span class="c1">// стовпець, а не ширину вікна. Перегляньте &quot;wrap_width_style&quot; для</span>
+<span class="w">    </span><span class="c1">// додаткових параметрів.</span>
+<span class="w">    </span><span class="nt">&quot;wrap_width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">    </span><span class="nt">&quot;show_definitions&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;sidebar_size_13&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;tabs_small&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;margin&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;move_to_limit_on_up_down&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;predawn_findreplace_small&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;predawn_tabs_small&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Додає пробіли до першої відкритої дужки під час відступу. Потрібно ввімкнути auto_indent.</span>
+<span class="w">    </span><span class="nt">&quot;indent_to_bracket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Якщо ввімкнено, натискання вкладки вставлятиме найкраще відповідне завершення.</span>
+<span class="w">    </span><span class="c1">// Якщо вимкнено, вкладка запускатиме лише фрагменти або вставлятиме табуляцію.</span>
+<span class="w">    </span><span class="c1">// Shift+tab можна використовувати для вставлення явної табуляції, коли ввімкнено tab_completion.</span>
+<span class="w">    </span><span class="nt">&quot;tab_completion&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="nt">&quot;draw_white_space&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;all_tabs&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;selection&quot;</span><span class="p">],</span>
+
+<span class="w">    </span><span class="c1">// Керує способом малювання пробілу, що не є ASCII.</span>
+<span class="w">    </span><span class="c1">// - &quot;none&quot;: дослівно намалювати пробіл Юнікод, наприклад. приховування пробілів нульової ширини.</span>
+<span class="w">    </span><span class="c1">// - &quot;punctuation&quot;: намалюйте кодові точки пробілу Unicode, визначеного як пунктуація. Це включає NBSP, але виключає ідеографічний простір CJK.</span>
+<span class="w">    </span><span class="c1">// - &quot;all&quot;: намалювати кодові точки всіх символів пробілу, що не є ASCII.</span>
+<span class="w">    </span><span class="nt">&quot;draw_unicode_white_space&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;all&quot;</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Вирізайте пробіли під час збереження лише для тих частин файлу, які ви змінили. Якщо в інших частинах файлу є пробіли в кінці, вони залишаються окремо.</span>
+<span class="w">    </span><span class="nt">&quot;trim_only_modified_white_space&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Установіть значення true, щоб останній рядок файлу закінчувався символом нового рядка під час збереження</span>
+<span class="w">    </span><span class="nt">&quot;ensure_newline_at_eof_on_save&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Керує видаленням пробілу в кінці під час збереження.</span>
+<span class="w">    </span><span class="c1">// - &quot;none&quot;: не видаляти кінцеві пробіли під час збереження.</span>
+<span class="w">    </span><span class="c1">// - &quot;all&quot;: Видалити всі пробіли в кінці під час збереження.</span>
+<span class="w">    </span><span class="c1">// - &quot;not_on_caret&quot;: видаляйте лише пробіли, які не впливатимуть</span>
+<span class="w">    </span><span class="c1">//                   на каретку.</span>
+<span class="w">    </span><span class="c1">//                   Якщо використовується разом із &quot;save_on_focus_lost&quot; і певними</span>
+<span class="w">    </span><span class="c1">// середовищами робочого столу, через які програма часто втрачає</span>
+<span class="w">    </span><span class="c1">// фокус, це дозволяє уникнути стрибків курсору.</span>
+<span class="w">    </span><span class="nt">&quot;trim_trailing_white_space_on_save&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;all&quot;</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Установіть значення true, щоб автоматично зберігати файли під час переходу до іншого файлу чи програми</span>
+<span class="w">    </span><span class="nt">&quot;save_on_focus_lost&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Обрізає пробіли, додані auto_indent під час переміщення каретки з рядка.</span>
+<span class="w">    </span><span class="nt">&quot;trim_automatic_white_space&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Установіть значення false, щоб вимкнути напрямні відступів.</span>
+<span class="w">    </span><span class="c1">// Колір і ширину напрямних відступів можна налаштувати шляхом редагування</span>
+<span class="w">    </span><span class="c1">// відповідний файл .tmTheme і вказуючи кольори &quot;guide&quot;,</span>
+<span class="w">    </span><span class="c1">// &quot;activeGuide&quot; і &quot;stackGuide&quot;</span>
+<span class="w">    </span><span class="nt">&quot;draw_indent_guides&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="cm">/*&quot;trim_trailing_white_space_on_save&quot;: &quot;none&quot;,*/</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="c1">// &quot;font_face&quot;: &quot;Droid Sans Mono Regular&quot;,</span>
+<span class="w">    </span><span class="nt">&quot;font_face&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;JetBrains Mono&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;font_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;theme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Default Dark.sublime-theme&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;color_scheme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mariana.sublime-color-scheme&quot;</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Стовпці для відображення вертикальних лінійок</span>
+<span class="w">    </span><span class="nt">&quot;rulers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">80</span><span class="p">,],</span>
+
+<span class="w">    </span><span class="c1">// Установіть значення true, щоб вставляти пробіли під час натискання табуляції</span>
+<span class="w">    </span><span class="nt">&quot;translate_tabs_to_spaces&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Вимикає горизонтальне прокручування, якщо ввімкнено.</span>
+<span class="w">    </span><span class="c1">// Може бути встановлено на true, false або &quot;auto&quot;, для яких його буде вимкнено</span>
+<span class="w">    </span><span class="c1">// вихідний код, і в іншому випадку включено.</span>
+<span class="w">    </span><span class="nt">&quot;word_wrap&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Встановіть значення, відмінне від 0, щоб примусово обтікати цей</span>
+<span class="w">    </span><span class="c1">// стовпець, а не ширину вікна. Перегляньте &quot;wrap_width_style&quot; для</span>
+<span class="w">    </span><span class="c1">// додаткових параметрів.</span>
+<span class="w">    </span><span class="nt">&quot;wrap_width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Додає пробіли до першої відкритої дужки під час відступу. Потрібно ввімкнути auto_indent.</span>
+<span class="w">    </span><span class="nt">&quot;indent_to_bracket&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Керує способом малювання пробілу, що не є ASCII.</span>
+<span class="w">    </span><span class="c1">// - &quot;none&quot;: дослівно намалювати пробіл Юнікод, наприклад. приховування пробілів нульової ширини.</span>
+<span class="w">    </span><span class="c1">// - &quot;punctuation&quot;: намалюйте кодові точки пробілу Unicode, визначеного як пунктуація. Це включає NBSP, але виключає ідеографічний простір CJK.</span>
+<span class="w">    </span><span class="c1">// - &quot;all&quot;: намалювати кодові точки всіх символів пробілу, що не є ASCII.</span>
+<span class="w">    </span><span class="nt">&quot;draw_unicode_white_space&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;all&quot;</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Вирізайте пробіли під час збереження лише для тих частин файлу, які ви змінили. Якщо в інших частинах файлу є пробіли в кінці, вони залишаються окремо.</span>
+<span class="w">    </span><span class="nt">&quot;trim_only_modified_white_space&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Установіть значення true, щоб останній рядок файлу закінчувався символом нового рядка під час збереження</span>
+<span class="w">    </span><span class="nt">&quot;ensure_newline_at_eof_on_save&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Керує видаленням пробілу в кінці під час збереження.</span>
+<span class="w">    </span><span class="c1">// - &quot;немає&quot;: не видаляти кінцеві пробіли під час збереження.</span>
+<span class="w">    </span><span class="c1">// - &quot;все&quot;: Видалити всі пробіли в кінці під час збереження.</span>
+<span class="w">    </span><span class="c1">// - &quot;not_on_caret&quot;: видаляйте лише пробіли, які не впливатимуть</span>
+<span class="w">    </span><span class="c1">//                   на каретку.</span>
+<span class="w">    </span><span class="c1">//                   Якщо використовується разом із &quot;save_on_focus_lost&quot; і певними</span>
+<span class="w">    </span><span class="c1">// середовищами робочого столу, через які програма часто втрачає</span>
+<span class="w">    </span><span class="c1">// фокус, це дозволяє уникнути стрибків курсору.</span>
+<span class="w">    </span><span class="nt">&quot;trim_trailing_white_space_on_save&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;all&quot;</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Установіть значення true, щоб автоматично зберігати файли під час переходу до іншого файлу чи програми</span>
+<span class="w">    </span><span class="nt">&quot;save_on_focus_lost&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Обрізає пробіли, додані auto_indent під час переміщення каретки з рядка.</span>
+<span class="w">    </span><span class="nt">&quot;trim_automatic_white_space&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Установіть значення false, щоб вимкнути напрямні відступів.</span>
+<span class="w">    </span><span class="c1">// Колір і ширину напрямних відступів можна налаштувати шляхом редагування</span>
+<span class="w">    </span><span class="c1">// відповідний файл .tmTheme і вказуючи кольори &quot;guide&quot;,</span>
+<span class="w">    </span><span class="c1">// &quot;activeGuide&quot; і &quot;stackGuide&quot;</span>
+<span class="w">    </span><span class="nt">&quot;draw_indent_guides&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="cm">/*&quot;trim_trailing_white_space_on_save&quot;: &quot;none&quot;,*/</span>
+
+<span class="w">    </span><span class="c1">// Скільки рядків курсор не доходить до верх/нижн краю сторінки,</span>
+<span class="w">    </span><span class="c1">// щоб почалося прокручування контенту сторінки.</span>
+<span class="w">    </span><span class="c1">// Це впливає на всі зміни виділення, наприклад перетягування виділення,</span>
+<span class="w">    </span><span class="c1">// сторінку вгору/вниз і переміщення каретки.</span>
+<span class="w">    </span><span class="nt">&quot;scroll_context_lines&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// This controls what happens when pressing up or down when on the first</span>
+<span class="w">    </span><span class="c1">// or last line.</span>
+<span class="w">    </span><span class="c1">// On Mac, this value is overridden in the platform specific settings, so</span>
+<span class="w">    </span><span class="c1">// you&#39;ll need to place this line in your user settings to override it.</span>
+<span class="w">    </span><span class="c1">// ??? Це керує тим, що відбувається під час натискання вгору або вниз у першому чи останньому рядку. На Mac це значення перевизначено в налаштуваннях певної платформи, тому вам потрібно буде розмістити цей рядок у налаштуваннях користувача, щоб змінити його.</span>
+<span class="w">    </span><span class="nt">&quot;move_to_limit_on_up_down&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Контролює, коли малюється пробіл. Можна комбінувати будь-які з наступних варіантів:</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">// - &quot;selection&quot;: намалюйте пробіл під поточним виділенням.</span>
+<span class="w">    </span><span class="c1">// - &quot;leading&quot;: намалюйте будь-який пробіл між початком рядка та першим символом.</span>
+<span class="w">    </span><span class="c1">// - &quot;enclosed&quot;: намалювати пробіли всередині інших символів.</span>
+<span class="w">    </span><span class="c1">// - &quot;trailing&quot;: малює пробіли після останнього символу в рядку.</span>
+<span class="w">    </span><span class="c1">// - &quot;isolated&quot;: малює пробіли в рядках, які не містять інших символів.</span>
+<span class="w">    </span><span class="c1">// - &quot;all&quot;: все вищезазначене, тобто. завжди малюйте пробіл.</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">// Ці параметри можна додатково уточнити, додавши будь-який із наведених нижче елементів, розділених символом підкреслення:</span>
+<span class="w">    </span><span class="c1">// - &quot;none&quot;: не малювати такий пробіл.</span>
+<span class="w">    </span><span class="c1">// - &quot;tabs&quot;: тут малювати лише табуляції.</span>
+<span class="w">    </span><span class="c1">// - &quot;spaces&quot;: тут малюйте лише пробіли.</span>
+<span class="w">    </span><span class="c1">// - &quot;mixed&quot;: малюйте лише пробіли, які не відповідають стилю відступу. Наприклад, якщо &quot;translate_tabs_to_spaces&quot; має значення true, лише малюйте табуляції.</span>
+<span class="w">    </span><span class="c1">// - &quot;mixed_tabs&quot;: як &quot;mixed&quot;, але лише малювати табуляції.</span>
+<span class="w">    </span><span class="c1">// - &quot;mixed_spaces&quot;: як &quot;mixed&quot;, але лише малює пробіли.</span>
+<span class="w">    </span><span class="c1">// - &quot;all&quot;: намалюйте табуляції та пробіли. Це значення за умовчанням. Зауважте, що параметри застосовуються послідовно. Тож пізніший варіант може замінити попередній.</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">// приклади:</span>
+<span class="w">    </span><span class="c1">// - [&quot;selection&quot;, &quot;trailing&quot;, &quot;isolated&quot;]:</span>
+<span class="w">    </span><span class="c1">//      Намалюйте пробіли в кінці будь-яких рядків і під виділенням.</span>
+<span class="w">    </span><span class="c1">// - [&quot;all_tabs&quot;, &quot;selection&quot;]:</span>
+<span class="w">    </span><span class="c1">//      Намалюйте табуляції будь-де та будь-який пробіл під виділенням.</span>
+<span class="w">    </span><span class="c1">// - [&quot;all_mixed&quot;]:</span>
+<span class="w">    </span><span class="c1">//      Намалюйте будь-які пробіли, які не відповідають стилю відступу.</span>
+<span class="w">    </span><span class="c1">// - [&quot;leading_mixed&quot;, &quot;isolated_mixed&quot;]:</span>
+<span class="w">    </span><span class="c1">//      Намалюйте будь-який відступ, який не відповідає стилю відступу.</span>
+<span class="w">    </span><span class="c1">// - [&quot;selection_mixed_tabs&quot;]:</span>
+<span class="w">    </span><span class="c1">//      Малюйте лише табуляцїї під виділенням і лише якщо стиль відступу – пробіли.</span>
+<span class="w">    </span><span class="c1">// - [&quot;all_tabs&quot;, &quot;selection&quot;]:</span>
+<span class="w">    </span><span class="c1">//      Намалюйте всі табуляції та будь-які пробіли під виділенням.</span>
+<span class="w">    </span><span class="c1">// - [&quot;all&quot;, &quot;selection_none&quot;]:</span>
+<span class="w">    </span><span class="c1">//      Інверсія за замовчуванням. Намалюйте пробіли скрізь, крім виділення.</span>
+<span class="w">    </span><span class="nt">&quot;draw_white_space&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;leading&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;isolated&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;selection&quot;</span><span class="p">],</span>
+
+<span class="w">    </span><span class="c1">// Якщо ввімкнено, натискання вкладки вставлятиме найкраще відповідне завершення. Якщо вимкнено, вкладка запускатиме лише фрагменти або вставлятиме вкладку. Shift+tab можна використовувати для вставлення явної табуляції, коли ввімкнено tab_completion.</span>
+<span class="w">    </span><span class="nt">&quot;auto_complete_selector&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;meta.tag, source&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;auto_complete_triggers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+
+<span class="w">    </span><span class="c1">// За замовчуванням Shift+Tab скасовує відступ, лише якщо виділення охоплює кілька рядків. Якщо в інший час натиснути клавіші shift+tab, буде вставлено символ табуляції – це дозволить вставляти табуляції, коли ввімкнено tab_completion. Установіть для цього параметра значення true, щоб Shift+Tab завжди видаляли відступи замість вставлення табуляції.</span>
+<span class="w">    </span><span class="nt">&quot;shift_tab_unindent&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Перетягувати виділений текст мишкою</span>
+<span class="w">    </span><span class="nt">&quot;drag_text&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Display file encoding in the status bar</span>
+<span class="w">    </span><span class="nt">&quot;show_encoding&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Display line endings in the status bar</span>
+<span class="w">    </span><span class="nt">&quot;show_line_endings&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Show folders in the sidebar in bold</span>
+<span class="w">    </span><span class="nt">&quot;bold_folder_labels&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Управляет поведением при нажатии на один файл на боковой панели, который уже открыт.</span>
+<span class="w">    </span><span class="c1">// - true: если файл уже открыт в какой-либо группе, он будет выбран.</span>
+<span class="w">    </span><span class="c1">// - false: он будет выбран только в том случае, если файл открыт в группе с фокусом, в противном случае открывается новый вид файла.</span>
+<span class="w">    </span><span class="nt">&quot;select_across_groups&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+
+<span class="w">    </span><span class="c1">// Предварительный просмотр содержимого файла при нажатии на файл на боковой панели. Двойной щелчок или редактирование предварительного просмотра откроет файл и назначит ему вкладку.</span>
+<span class="w">    </span><span class="c1">// - true: всегда выполнять предварительный просмотр при щелчке, включая правый щелчок.</span>
+<span class="w">    </span><span class="c1">// - false: Никогда не просматривать</span>
+<span class="w">    </span><span class="c1">// - &quot;only_left&quot;: только предварительный просмотр при щелчке левой кнопкой мыши, щелчок правой кнопкой мыши изменит выбор, но не просмотрит файл.</span>
+<span class="w">    </span><span class="c1">// &quot;preview_on_click&quot;: true,</span>
+
+<span class="w">    </span><span class="c1">// Управляет поведением при нажатии на один файл на боковой панели, который уже открыт.</span>
+<span class="w">    </span><span class="c1">// - true: Если файл уже открыт в какой-либо группе, он будет выбран.</span>
+<span class="w">    </span><span class="c1">// - false: он будет выбран только в том случае, если файл открыт в группе с фокусом, в противном случае открывается новый просмотр файла.</span>
+<span class="w">    </span><span class="cm">/*&quot;select_across_groups&quot;: true,*/</span>
+
+<span class="w">    </span><span class="nt">&quot;ignored_packages&quot;</span><span class="p">:</span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;Vintage&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;dark_color_scheme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Breakers.sublime-color-scheme&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;light_color_scheme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mariana.sublime-color-scheme&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Повернутись нагору
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tabs.sticky", "navigation.path", "header.autohide", "content.action.view", "content.action.edit", "content.code.copy", "search.highlight", "search.suggest"], "search": "../../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0456\u0439\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u0421\u043a\u043e\u043f\u0456\u044e\u0432\u0430\u0442\u0438 \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0429\u0435 1 \u0437\u0431\u0456\u0433 \u043d\u0430 \u0446\u0456\u0439 \u0441\u0442\u043e\u0440\u0456\u043d\u0446\u0456", "search.result.more.other": "\u0429\u0435 # \u0437\u0431\u0456\u0433\u0456\u0432 \u043d\u0430 \u0446\u0456\u0439 \u0441\u0442\u043e\u0440\u0456\u043d\u0446\u0456", "search.result.none": "\u0417\u0431\u0456\u0433\u0456\u0432 \u043d\u0435 \u0437\u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u0417\u043d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0437\u0431\u0456\u0433", "search.result.other": "\u0417\u043d\u0430\u0439\u0434\u0435\u043d\u043e # \u0437\u0431\u0456\u0433\u0456\u0432", "search.result.placeholder": "\u0420\u043e\u0437\u043f\u043e\u0447\u043d\u0456\u0442\u044c \u043f\u0438\u0441\u0430\u0442\u0438 \u0434\u043b\u044f \u043f\u043e\u0448\u0443\u043a\u0443", "search.result.term.missing": "\u041d\u0435 \u0437\u043d\u0430\u0439\u0434\u0435\u043d\u043e \u0437\u0430\u043f\u0438\u0442\u0443", "select.version": "\u041e\u0431\u0440\u0430\u0442\u0438 \u0432\u0435\u0440\u0441\u0456\u044e"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
